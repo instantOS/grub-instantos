@@ -35,16 +35,16 @@ terminal-border: "0"
   scrollbar = false
 }
 
-# Opciones
-+ label {
-  top = 92%
-  left = 0%
-  width = 100%
-  height = 10%
-  align = "center"
-  text = "@KEYMAP_MIDDLE@"
-  color = "#BD93F9"
+
+# keyboard hints
++ image {
+  top = 80%+47
+  left = 50%-240
+  width = 480
+  height = 42
+  file = "menu.png"
 }
+
 
 # Progress bar
 + progress_bar {
@@ -56,3 +56,5 @@ terminal-border: "0"
   fg_color = "#BD93F9"
   bg_color = "#001052"
 }
+
+
