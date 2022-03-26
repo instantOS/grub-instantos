@@ -4,7 +4,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-[ $USER != 'root' ] && >&2 echo "$0: not running as root" && exit 1
+[ "$USER" != 'root' ] && >&2 echo "$0: not running as root" && exit 1
 
 echo 'uninstalling theme...'
 rm -rvf /boot/grub/themes/instantos

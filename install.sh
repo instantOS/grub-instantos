@@ -4,7 +4,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-[ $USER != 'root' ] && >&2 echo "$0: not running as root" && exit 1
+[ "$USER" != 'root' ] && >&2 echo "$0: not running as root" && exit 1
 
 echo 'installing theme...'
 mkdir /boot/grub/themes/instantos ||:
